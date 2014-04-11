@@ -1,0 +1,4 @@
+morning
+=======
+
+Blog template
