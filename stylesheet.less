@@ -1,0 +1,235 @@
+/*	===============================
+	Table of Contents
+	===============================
+	- Colour Swatches
+	- Font Swatches
+	- Boostrap Import
+	- Template Styles
+		1.  Globals
+		2.  Header
+		3.  Navigation
+		4.  Home
+		5.  Menu
+		6.  Blog List
+		7.  Blog Post
+		8.  Forms
+		9.  Gallery / Images / Slideshow
+		10. Footer
+		11. Misc
+		12. Responsive
+	=============================== */
+
+/*	===============================
+	Colour Swatches
+	===============================	
+	"color1": == Background
+	"color2": == Contrast colour
+	"color3": == Button colour
+	"color4": == Title colour
+	"color5": == Paragraph colour
+	"color6": == Nav text colour
+	"color7": == Header BG colour
+	=============================== */
+
+/*	===============================
+	Font Swatches
+	===============================	
+	"font1":  == Heading 1
+	"font2":  == Heading 2
+	"font3":  == Heading 3
+	"font4":  == Heading 4
+	"font5":  == Paragraph
+	"font6":  == Navigation Text
+	"font7":  == Buttons
+	"font8":  == Feature Title
+	"font9":  == Feature Subtitle
+	"font10": == Logo
+	=============================== */
+
+
+/*	===============================
+	Bootstrap import
+	=============================== */
+@import "@{templateCommon}/basekit-bootstrap.less";
+
+/*	===============================
+	Flynn (grid) import
+	=============================== */
+@import "grid/grid.less";
+
+/*	===============================
+	Template Styles
+	=============================== */
+
+// 1. Globals
+html {
+	height: 100%
+}
+
+body {
+	min-height: 100%
+}
+
+html, body {
+	height: 100%
+}
+
+body {
+	background-attachment: fixed;
+	min-height:100%;
+	background-size: auto 100%;
+	background-repeat: repeat;
+}
+
+html, body {
+	font-family:@font-swatch5-font-family;
+	font-weight: @font-swatch5-font-weight;
+	color:@font-swatch5-color;
+	line-height:@font-swatch5-line-height;
+	letter-spacing: @font-swatch5-letter-spacing;
+	font-size: @font-swatch5-font-size;
+}
+
+h1 {
+	font-family:@font-swatch1-font-family; 
+	font-weight: @font-swatch1-font-weight; 
+	color:@font-swatch1-color; 
+	line-height:@font-swatch1-line-height; 
+	letter-spacing: @font-swatch1-letter-spacing; 
+	font-size: @font-swatch1-font-size;
+	a {
+		font-family:@font-swatch1-font-family; 
+		font-weight: @font-swatch1-font-weight; 
+		line-height:@font-swatch1-line-height; 
+		letter-spacing: @font-swatch1-letter-spacing; 
+		font-size: @font-swatch1-font-size;
+	}
+}
+
+h2 {
+	font-family:@font-swatch2-font-family; 
+	font-weight: @font-swatch2-font-weight; 
+	color:@font-swatch2-color; 
+	line-height:@font-swatch2-line-height; 
+	letter-spacing: @font-swatch2-letter-spacing; 
+	font-size: @font-swatch2-font-size;
+	text-shadow: 0 5px 0 @color-swatch3;
+	a {
+		font-family:@font-swatch2-font-family; 
+		font-weight: @font-swatch2-font-weight; 
+		line-height:@font-swatch2-line-height; 
+		letter-spacing: @font-swatch2-letter-spacing; 
+		font-size: @font-swatch2-font-size;
+		text-shadow: 0 5px 0 @color-swatch3;
+	}
+}
+
+h3, .widget.companyname a {
+	font-family:@font-swatch3-font-family; 
+	font-weight: @font-swatch3-font-weight; 
+	color:@font-swatch3-color; 
+	line-height:@font-swatch3-line-height; 
+	letter-spacing: @font-swatch3-letter-spacing; 
+	font-size: @font-swatch3-font-size;
+	a {
+		font-family:@font-swatch3-font-family; 
+		font-weight: @font-swatch3-font-weight; 
+		line-height:@font-swatch3-line-height; 
+		letter-spacing: @font-swatch3-letter-spacing; 
+		font-size: @font-swatch3-font-size;
+	}
+}
+
+h4 {
+	font-family:@font-swatch4-font-family; 
+	font-weight: @font-swatch4-font-weight; 
+	color:@font-swatch4-color; 
+	line-height:@font-swatch4-line-height; 
+	letter-spacing: @font-swatch4-letter-spacing; 
+	font-size: @font-swatch4-font-size;
+	a {
+		font-family:@font-swatch4-font-family; 
+		font-weight: @font-swatch4-font-weight; 
+		line-height:@font-swatch4-line-height; 
+		letter-spacing: @font-swatch4-letter-spacing; 
+		font-size: @font-swatch4-font-size;
+	}
+}
+
+h5 {
+	font-family:@font-swatch5-font-family;
+	font-weight: @font-swatch5-font-weight;
+	color:@font-swatch5-color;
+	line-height:@font-swatch5-line-height;
+	letter-spacing: @font-swatch5-letter-spacing;
+	font-size: @font-swatch5-font-size;
+	a {
+		font-family:@font-swatch5-font-family;
+		font-weight: @font-swatch5-font-weight;
+		line-height:@font-swatch5-line-height;
+		letter-spacing: @font-swatch5-letter-spacing;
+		font-size: @font-swatch5-font-size;
+	}
+}
+
+h6 {
+	font-family:@font-swatch6-font-family;
+	font-weight: @font-swatch6-font-weight;
+	color:@font-swatch6-color;
+	line-height:@font-swatch6-line-height;
+	letter-spacing: @font-swatch6-letter-spacing;
+	font-size: @font-swatch6-font-size;
+	a {
+		font-family:@font-swatch6-font-family;
+		font-weight: @font-swatch6-font-weight;
+		line-height:@font-swatch6-line-height;
+		letter-spacing: @font-swatch6-letter-spacing;
+		font-size: @font-swatch6-font-size;
+	}
+}
+
+p,
+.contactform label,
+.twitter ul li a,
+.twitter ul li time,
+.signupform label {
+	font-family:@font-swatch5-font-family;
+	font-weight: @font-swatch5-font-weight;
+	color:@font-swatch5-color;
+	line-height:@font-swatch5-line-height;
+	letter-spacing: @font-swatch5-letter-spacing;
+	font-size: @font-swatch5-font-size;
+}
+
+blockquote {
+	font-style: italic;
+	font-size: bkscale(@font-swatch5-font-size, 1.2);
+	line-height: bkscale(@font-swatch5-line-height, 1.2);
+	background-color: @color-swatch3;
+	text-shadow: 0 1px 0 darken(@color-swatch3, 5%);
+	&:before {
+		left: 8px;
+		color: @color-swatch2;
+	}
+}
+
+a,
+.widget.twitter a,
+.widget.twitter ul li a,
+.widget.twitter ul li span a {
+	color: @color-swatch2;
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+// Feature Header 
+.widget.feature .feature-bgimg .content {
+	max-width: 960px;
+	margin: 0 auto;
+	.spare {
+		width: 50%;
+		margin-right: 50%;
+	}
+}
