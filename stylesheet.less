@@ -220,16 +220,144 @@ a,
 	color: @color-swatch2;
 	text-decoration: none;
 	&:hover {
-		text-decoration: none;
+		text-decoration: underline;
 	}
+}
+
+// Header
+.header-feature > * {
+	float: left;
 }
 
 // Feature Header 
 .widget.feature .feature-bgimg .content {
 	max-width: 960px;
 	margin: 0 auto;
+	display: block;
+	padding-top: 160px;
 	.spare {
 		width: 50%;
 		margin-right: 50%;
 	}
+}
+
+// Button styles
+.contactform button.btn,
+button.btn,
+.btn,
+.widget.profile form button,
+.widget.paypalbuynow .widget.button.paypal,
+.widget.tweet a,
+.widget.dropbox button,
+.clicktocall a,
+.signupform fieldset button,
+.blog-search-form button,
+.widget.socialicons span a,
+.widget.profile .bk-profile-socialicons span a,
+.widget.feature .feature-bgimg .content button,
+.template-footer .widget.profile .bk-profile-socialicons span a,
+.blog-search-form button,
+.widget.ecombasket .ecombasket-list-container .ecombasket-checkout-wrap .ecombasket-checkout-link,
+.widget.ecomcheckout table tr td .checkout-quantitybtn button,
+.widget.ecomcheckout .checkout-order-button {
+	display: inline-block;
+	cursor: pointer;
+	background-color: @font-swatch7-background-color;
+	-webkit-appearance: none;
+	font-family:@font-swatch7-font-family;
+	font-weight: @font-swatch7-font-weight;
+	-webkit-font-smoothing: antialiased;
+	color:@font-swatch7-color;
+	line-height:@font-swatch7-line-height;
+	letter-spacing: @font-swatch7-letter-spacing;
+	font-size: @font-swatch7-font-size;
+	padding: 8px 14px 9px;
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	-ms-transition: .2s;
+	transition: .2s;
+	&:hover {
+		background-color: @font-swatch7-background-color-hover;
+	}
+}
+
+.widget.tweet a,
+.widget.paypalbuynow .widget.button.paypal,
+.widget.dropbox button {
+	padding-left: 40px;
+	display: inline-block;
+}
+
+// Forms
+fieldset .btn,
+fieldset button,
+form button {
+	vertical-align: middle;
+}
+
+.form-group {
+	padding-bottom: 10px;
+}
+
+.widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation select,
+.widget.ecomcheckout .delivery select,
+select,
+input,
+input[type=email],
+input[type=text],
+input[type=search],
+textarea,
+.contactform input,
+.contactform textarea,
+.widget.profile form fieldset input {
+	background-color: @color-swatch1;
+	text-indent: 0;
+	padding: 8px 9px 10px;
+	border: 1px solid @font-swatch7-background-color;
+	outline: none;
+	-webkit-transition: border .2s;
+	-moz-transition: border .2s;
+	-ms-transition: border .2s;
+	transition: border .2s;
+	&:hover, &:focus {
+		border: 1px solid darken(@font-swatch7-background-color, 20%);
+	}
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+.widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation select,
+select {
+	-moz-appearance: none;
+	text-indent: 0.01px;
+	text-overflow: '';
+}
+
+.widget.profile form fieldset input,
+input[type=email],
+input[type=text],
+input[type=search],
+.signupform fieldset input {
+	height: 41px;
+}
+
+.widget.profile, .widget.signupform {
+	input[type=email] {
+		width: 100%;
+		padding-right: 74px;
+		margin-right: -70px;
+	}
+	button[type=submit] {
+		width: 70px;
+	}
+}
+
+textarea {
+	resize: vertical;
+}
+
+input[type="search"]::-webkit-search-decoration {
+	display: none;
 }
