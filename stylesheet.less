@@ -296,7 +296,10 @@ button.btn,
 .widget.ecombasket .ecombasket-list-container .ecombasket-checkout-wrap .ecombasket-checkout-link,
 .widget.ecomcheckout table tr td .checkout-quantitybtn button,
 .widget.ecomcheckout .checkout-order-button,
-.blog-post-more-link a {
+.blog-post-more-link a,
+.widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation select,
+.widget.ecomcheckout .delivery select,
+select {
 	border: 0;
 	display: inline-block;
 	cursor: pointer;
@@ -342,9 +345,6 @@ form button {
 	padding-bottom: 10px;
 }
 
-.widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation select,
-.widget.ecomcheckout .delivery select,
-select,
 input,
 input[type=email],
 input[type=text],
@@ -356,14 +356,14 @@ textarea,
 	background-color: @color-swatch1;
 	text-indent: 0;
 	padding: 8px 9px 10px;
-	border: 1px solid @font-swatch7-background-color;
+	border: 1px solid darken(@color-swatch1, 10%);
 	outline: none;
 	-webkit-transition: border .2s;
 	-moz-transition: border .2s;
 	-ms-transition: border .2s;
 	transition: border .2s;
 	&:hover, &:focus {
-		border: 1px solid darken(@font-swatch7-background-color, 20%);
+		border: 1px solid darken(@color-swatch1, 20%);
 	}
 }
 
@@ -446,6 +446,7 @@ input[type="search"]::-webkit-search-decoration {
 
 .blog-post-item {
 	position: relative;
+	margin-bottom: 30px;
 }
 
 .blog-post-date {
@@ -458,6 +459,10 @@ input[type="search"]::-webkit-search-decoration {
 	time:before {
 		content: "Posted: ";
 	}
+}
+
+.blog-list-footer {
+	text-align: center;
 }
 
 // Menu
@@ -478,7 +483,7 @@ input[type="search"]::-webkit-search-decoration {
 	padding: 12px 20px 18px;
 }
 
-// Menu
+// Slideshow
 .widget.responsiveslideshow .slideshow-widget {
 	.btn-prev, .btn-next {
 		text-indent: 1000px;
@@ -624,4 +629,10 @@ input[type="search"]::-webkit-search-decoration {
 
 .ecom-productslist-image-wrap {
 	border: 1px solid darken(@color-swatch1, 10%);
+}
+
+.widget.ecombasket .ecombasket-list-container ul li,
+.widget.ecomcheckout table tr th,
+.widget.ecomcheckout table tr td {
+	border-color: darken(@color-swatch1, 10%);
 }
