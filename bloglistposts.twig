@@ -1,9 +1,9 @@
 {% extends "layout.twig" %}
 {% block content %}
-<aside class="header-blog container">
+<aside class="header-blog">
 	<div class="row">
 		<div class="page-title span-6">
-			{{widget('content', 'pagetitlecontent', {content: '<h1>Title of the page</h1>'})|raw}}
+			{{widget('content', 'blogtitlecontent', {content: '<h1>Title of the page</h1>'})|raw}}
 		</div>
 		<div class="blog-search span-6">
 			{{widget('blogsearch', 'blogsearch', {})|raw}}
@@ -11,7 +11,11 @@
 	</div>
 </aside>
 <section class="section main bloglist-page">
-	{{widget('bloglistposts', 'bloglistposts1', {postDisplayType: "summary"})|raw}}
+	<div class="row">
+		<div class="span-12">
+			{{widget('bloglistposts', 'bloglistposts1', {postDisplayType: "summary"})|raw}}
+		</div>
+	</div>
 </section>
 
 {% endblock %}

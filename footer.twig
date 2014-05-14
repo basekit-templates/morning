@@ -1,5 +1,13 @@
 <footer class="template-footer">
-	<div class="footer-content">
-		{{widget('profile', 'footercolumn2profilecopyright', { 'profileType':'copyright', 'copyright':'profile'})|raw}}
+	<div class="row">
+		<div class="footer-content span-6">
+			{{widget('content', 'footercontacttitle', {content: '<h1>Title of the page</h1>'})|raw}}
+			{{widget('profile', 'footeremail', { 'profileType':'email'})|raw}}
+			{{widget('profile', 'footeremail', { 'profileType':'phone'})|raw}}
+		</div>
+		<div class="footer-navigation span-6">
+			{{widget('content', 'footercredittitle', {content: '<h1>Title of the page</h1>'})|raw}}
+			{{widget('profile', 'copyright', { 'profileType':'copyright', 'copyright':'profile'})|raw}}
+		</div>
 	</div>
 </footer>

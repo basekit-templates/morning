@@ -2,7 +2,11 @@
 {% block content %}
 
 <section class="section main default-page">
-	{{zone('main')|raw}}
+	<div class="row">
+		<div class="span-12">
+			{{zone('main')|raw}}
+		</div>
+	</div>
 </section>
 
 {% endblock %}
