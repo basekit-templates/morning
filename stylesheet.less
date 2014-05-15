@@ -374,8 +374,11 @@ form button {
 	vertical-align: middle;
 }
 
-.form-group {
+.form-group,
+.widget.ecomproductslist .productlist-display-form .form-group,
+.widget.ecomproductslist .productlist-item-count .form-group {
 	padding-bottom: 10px;
+	margin-bottom: 0;
 }
 
 input,
@@ -744,6 +747,15 @@ input[type="search"]::-webkit-search-decoration {
 			margin-top: 0;
 		}
 	}
+	.productlist-display-form {
+		label {
+			display: inline-block;
+			width: 19%;
+		}
+		select {
+			width: 80%;
+		}
+	}
 }
 
 @media @mobile {
@@ -751,6 +763,11 @@ input[type="search"]::-webkit-search-decoration {
 		padding-top: 30px;
 		.spare {
 			padding: 15px;
+		}
+	}
+	.productlist-display-form {
+		select, label {
+			width: 100%;
 		}
 	}
 }
