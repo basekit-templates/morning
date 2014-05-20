@@ -277,6 +277,17 @@ a,
 	}
 }
 
+.widget {
+	&.feature {
+		h2 {
+			padding-bottom: .1em;
+		}
+		h3 {
+			padding-bottom: 1em;
+		}
+	}
+}
+
 // Navigation
 .widget .extendednavigation > ul {
 	border-left: 1px solid darken(@color-swatch7, 10%);
@@ -449,7 +460,7 @@ select {
 	background-image: image('/images/arrow-down.png');
 	background-repeat: no-repeat;
 	background-position: right 12px center;
-	background-position-x: 95%;
+	background-position-x: 98%;
 	background-position-y: 53%;
 	margin-bottom: 12px;
 	padding-right: 33px;
@@ -493,6 +504,17 @@ input[type="search"]::-webkit-search-decoration {
 	}
 }
 
+.blog-post-list {
+	h2 {
+		padding-top: 15px;
+	}
+}
+.blogpost {
+	h1 {
+		padding-top: 10px;
+	}
+}
+
 .blog-post-item {
 	position: relative;
 	margin-bottom: 30px;
@@ -518,15 +540,25 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 .blog-list-footer {
-	text-align: center;
 	a {
-		margin: 0 10px;
+		margin: 0 10px 0 0;
 	}
 }
 
 // Menu
 .menu .menu-subsection {
 	padding: 0;
+	h2 {
+		color: @color-swatch5;
+		margin-top: 10px;
+		padding-bottom: 5px;
+	}
+	ol {
+		padding-bottom: 0;
+		li {
+			padding-bottom: 0;
+		}
+	}
 }
 .menu-subsection-wrapper,
 .menu-subsection-promoted,
@@ -540,6 +572,12 @@ input[type="search"]::-webkit-search-decoration {
 .menu-subsection-wrapper,
 .blog-post-metadata {
 	padding: 12px 20px 18px;
+}
+
+.dietary-icon {
+	background-color: fadeout(@color-swatch2, 95%);
+	border: 1px solid fadeout(@color-swatch2, 85%)!important;
+	padding: 0 5px;
 }
 
 // Slideshow
@@ -746,6 +784,10 @@ input[type="search"]::-webkit-search-decoration {
 			border-top: 1px solid darken(@color-swatch1, 10%);
 			margin-top: 0;
 		}
+		li.folder:after {
+			right: 5px;
+			top: 47%;
+		}
 	}
 	.productlist-display-form {
 		label {
@@ -754,6 +796,12 @@ input[type="search"]::-webkit-search-decoration {
 		}
 		select {
 			width: 80%;
+		}
+	}
+	.widget.feature .feature-bgimg .content {
+		.spare {
+			margin-right: 25%;
+			width: 75%;
 		}
 	}
 }
