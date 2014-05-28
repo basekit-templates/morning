@@ -249,6 +249,8 @@ a,
 	}
 	.companyname {
 		padding-top: 1.35em;
+		padding-left: 10px;
+		max-width: 70%;
 	}
 	.logo {
 		line-height: 0;
@@ -269,8 +271,8 @@ a,
 		background-color: fadeout(@color-swatch2, 50%);
 	}
 	button.btn {
-		background-color: @font-swatch9-color;
-		color: @color-swatch2;
+		background-color: @font-swatch7-color;
+		color: @font-swatch7-background-color;
 		&:hover {
 			background-color: darken(@font-swatch9-color, 5%);
 		}
@@ -309,6 +311,7 @@ a,
 	li.folder:after {
 		right: 25px;
 		top: 47%;
+		border-top-color: @color-swatch6;
 	}
 	li li a {
 		padding: 15px 30px;
