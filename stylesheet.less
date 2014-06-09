@@ -292,7 +292,9 @@ a,
 
 // Navigation
 .widget .extendednavigation > ul {
-	border-left: 1px solid darken(@color-swatch7, 10%);
+	#menu-item_1 {
+		border-left: 1px solid darken(@color-swatch7, 10%);	
+	}
 	li {
 		border-right: 1px solid darken(@color-swatch7, 10%);
 		li {
@@ -315,6 +317,11 @@ a,
 	}
 	li li a {
 		padding: 15px 30px;
+	}
+	li:hover {
+		ul {
+			left: -4px;
+		}
 	}
 }
 
