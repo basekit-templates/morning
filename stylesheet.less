@@ -530,18 +530,19 @@ input[type="search"]::-webkit-search-decoration {
 	margin-bottom: 30px;
 }
 
-.blog-post-date {
+.has-image .blog-post-date {
 	position: absolute;
 	top: 20px;
 	left: 20px;
 	padding: 5px 15px;
 	color: @color-swatch1;
 	background-color: fadeout(@color-swatch2, 50%);
-	time {
-		line-height: 1em;
-		&:before {
-			content: "Posted: ";
-		}
+}
+
+.blog-post-date time {
+	line-height: 1em;
+	&:before {
+		content: "Posted: ";
 	}
 }
 
