@@ -21,7 +21,7 @@
 
 /*	===============================
 	Colour Swatches
-	===============================	
+	===============================
 	"color1": == Background
 	"color2": == Contrast colour
 	"color3": == Button colour
@@ -33,7 +33,7 @@
 
 /*	===============================
 	Font Swatches
-	===============================	
+	===============================
 	"font1":  == Heading 1
 	"font2":  == Heading 2
 	"font3":  == Heading 3
@@ -91,65 +91,65 @@ html, body {
 }
 
 h1 {
-	font-family:@font-swatch1-font-family; 
-	font-weight: @font-swatch1-font-weight; 
-	color:@font-swatch1-color; 
-	line-height:@font-swatch1-line-height; 
-	letter-spacing: @font-swatch1-letter-spacing; 
+	font-family:@font-swatch1-font-family;
+	font-weight: @font-swatch1-font-weight;
+	color:@font-swatch1-color;
+	line-height:@font-swatch1-line-height;
+	letter-spacing: @font-swatch1-letter-spacing;
 	font-size: @font-swatch1-font-size;
 	a {
-		font-family:@font-swatch1-font-family; 
-		font-weight: @font-swatch1-font-weight; 
-		line-height:@font-swatch1-line-height; 
-		letter-spacing: @font-swatch1-letter-spacing; 
+		font-family:@font-swatch1-font-family;
+		font-weight: @font-swatch1-font-weight;
+		line-height:@font-swatch1-line-height;
+		letter-spacing: @font-swatch1-letter-spacing;
 		font-size: @font-swatch1-font-size;
 	}
 }
 
 h2 {
-	font-family:@font-swatch2-font-family; 
-	font-weight: @font-swatch2-font-weight; 
-	color:@font-swatch2-color; 
-	line-height:@font-swatch2-line-height; 
-	letter-spacing: @font-swatch2-letter-spacing; 
+	font-family:@font-swatch2-font-family;
+	font-weight: @font-swatch2-font-weight;
+	color:@font-swatch2-color;
+	line-height:@font-swatch2-line-height;
+	letter-spacing: @font-swatch2-letter-spacing;
 	font-size: @font-swatch2-font-size;
 	a {
-		font-family:@font-swatch2-font-family; 
-		font-weight: @font-swatch2-font-weight; 
-		line-height:@font-swatch2-line-height; 
-		letter-spacing: @font-swatch2-letter-spacing; 
+		font-family:@font-swatch2-font-family;
+		font-weight: @font-swatch2-font-weight;
+		line-height:@font-swatch2-line-height;
+		letter-spacing: @font-swatch2-letter-spacing;
 		font-size: @font-swatch2-font-size;
 	}
 }
 
 h3 {
-	font-family:@font-swatch3-font-family; 
-	font-weight: @font-swatch3-font-weight; 
-	color:@font-swatch3-color; 
-	line-height:@font-swatch3-line-height; 
-	letter-spacing: @font-swatch3-letter-spacing; 
+	font-family:@font-swatch3-font-family;
+	font-weight: @font-swatch3-font-weight;
+	color:@font-swatch3-color;
+	line-height:@font-swatch3-line-height;
+	letter-spacing: @font-swatch3-letter-spacing;
 	font-size: @font-swatch3-font-size;
 	a {
-		font-family:@font-swatch3-font-family; 
-		font-weight: @font-swatch3-font-weight; 
-		line-height:@font-swatch3-line-height; 
-		letter-spacing: @font-swatch3-letter-spacing; 
+		font-family:@font-swatch3-font-family;
+		font-weight: @font-swatch3-font-weight;
+		line-height:@font-swatch3-line-height;
+		letter-spacing: @font-swatch3-letter-spacing;
 		font-size: @font-swatch3-font-size;
 	}
 }
 
 h4 {
-	font-family:@font-swatch4-font-family; 
-	font-weight: @font-swatch4-font-weight; 
-	color:@font-swatch4-color; 
-	line-height:@font-swatch4-line-height; 
-	letter-spacing: @font-swatch4-letter-spacing; 
+	font-family:@font-swatch4-font-family;
+	font-weight: @font-swatch4-font-weight;
+	color:@font-swatch4-color;
+	line-height:@font-swatch4-line-height;
+	letter-spacing: @font-swatch4-letter-spacing;
 	font-size: @font-swatch4-font-size;
 	a {
-		font-family:@font-swatch4-font-family; 
-		font-weight: @font-swatch4-font-weight; 
-		line-height:@font-swatch4-line-height; 
-		letter-spacing: @font-swatch4-letter-spacing; 
+		font-family:@font-swatch4-font-family;
+		font-weight: @font-swatch4-font-weight;
+		line-height:@font-swatch4-line-height;
+		letter-spacing: @font-swatch4-letter-spacing;
 		font-size: @font-swatch4-font-size;
 	}
 }
@@ -218,8 +218,8 @@ p,
 
 blockquote {
 	font-style: italic;
-	font-size: bkscale(@font-swatch5-font-size, 1.2);
-	line-height: bkscale(@font-swatch5-line-height, 1.2);
+	font-size: @font-swatch5-font-size;
+	line-height: @font-swatch5-line-height;
 	background-color: fadeout(@color-swatch2, 80%);
 	&:before {
 		left: 8px;
@@ -257,7 +257,7 @@ a,
 	}
 }
 
-// Feature Header 
+// Feature Header
 .widget.feature .feature-bgimg .content {
 	max-width: 960px;
 	margin: 0 auto;
@@ -293,7 +293,7 @@ a,
 // Navigation
 .widget .extendednavigation > ul {
 	#menu-item_1 {
-		border-left: 1px solid darken(@color-swatch7, 10%);	
+		border-left: 1px solid darken(@color-swatch7, 10%);
 	}
 	li {
 		border-right: 1px solid darken(@color-swatch7, 10%);
@@ -827,7 +827,7 @@ input[type="search"]::-webkit-search-decoration {
 	.widget .extendednavigation a.pull {
 		right: 0;
 		top: -43px;
-	}	
+	}
 }
 
 @media @mobile {
