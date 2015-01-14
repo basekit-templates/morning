@@ -1,12 +1,18 @@
 {% extends "layout.twig" %}
 {% block content %}
 
-<section class="section main home-page">
-	<div class="row">
-		<div class="span-12">
-			{{zone('main')|raw}}
+</div>
+
+{{widget('feature', 'topfeature', {"header": "Lorem Ipsum", "strapline":"Lorem ipsum dolor sit amet, consectetur adipisicing elit", "buttonText":"Read more","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '50','showBtn': true})|raw}}
+
+<div class="page-wrap container">
+
+	<section class="section main home-page">
+		<div class="row">
+			<div class="span-12">
+				{{zone('main')|raw}}
+			</div>
 		</div>
-	</div>
-</section>
+	</section>
 
 {% endblock %}

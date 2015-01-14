@@ -3,9 +3,9 @@
 
 	<head>
 		{% include "head.twig" %}
-		
+
 		{% include basekit.headScript %}
-		
+
 		<!--<script type="text/javascript">
 			$(function() {
 				$('a[href*=#]:not([href=#])').click(function() {
@@ -26,20 +26,18 @@
 	</head>
 
 	<body class="{{ page.backgroundClass }} {{ site.colorSwatch }}">
-	
+
 		{% include "header.twig" %}
-		
-		{{widget('feature', 'topfeature', {"header": "Lorem Ipsum", "strapline":"Lorem ipsum dolor sit amet, consectetur adipisicing elit", "buttonText":"Read more","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '50','showBtn': true})|raw}}
-		
+
 		<div class="page-wrap container">
-			
+
 			{% block content %}
 			{% endblock %}
 
 			{% include "footer.twig" %}
 
 		</div>
-		
+
 		<script type="text/javascript">
 			!function() {
 				function supportsSVG() {
