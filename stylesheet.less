@@ -301,9 +301,6 @@ a,
 	}
 	li {
 		border-right: 1px solid darken(@color-swatch7, 10%);
-		li {
-			border-right: 0;
-		}
 	}
 	li a, li.folder > .text {
 		padding: 20px 30px;
@@ -324,7 +321,7 @@ a,
 	}
 	li:hover {
 		ul {
-			left: -4px;
+			right: -1px;
 		}
 	}
 }
@@ -780,6 +777,12 @@ input[type="search"]::-webkit-search-decoration {
 
 // Tablet
 @media @tablet {
+	.header-container {
+		border-bottom: none;
+	}
+	.template-header .row {
+		margin: 0;
+	}
 	.widget .extendednavigation a.pull {
 		right: 10px;
 		top: 22px;
@@ -804,6 +807,7 @@ input[type="search"]::-webkit-search-decoration {
 		li:hover ul {
 			border-top: 1px solid darken(@color-swatch1, 10%);
 			margin-top: 0;
+			right: 0;
 		}
 		li.folder:after {
 			right: 5px;
