@@ -835,16 +835,15 @@ input[type="search"],
 		text-shadow: none;
 		.title {
 			font-weight: @font-swatch3-font-weight;
-			&:after {
-				content: ":";
-			}
 		}
-		.title, .description {
+		.title,
+		.description {
 			color: @color-swatch5;
 		}
-		.title {
-			padding-right: 0;
-			padding-left: 6px;
+		.title,
+		.description {
+			padding: 6px;
+			display: block;
 		}
 	}
 }
