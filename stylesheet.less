@@ -975,6 +975,12 @@ input[type="search"],
 	border-top: 1px solid darken(@color-swatch1, 10%);
 }
 
+.template-nav {
+    @media @tablet {
+        width: 100% !important;
+    }
+}
+
 // Tablet
 @media @tablet {
 	.header-container {
@@ -1031,7 +1037,7 @@ input[type="search"],
 	}
 }
 
-@media (max-width: 767px) {
+@media (max-width: 769px) {
 	.widget .extendednavigation a.pull {
 		right: 0;
 		top: -43px;
