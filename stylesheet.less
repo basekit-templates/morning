@@ -881,20 +881,23 @@ input[type="search"],
 	}
 }
 
-.widget.responsiveslideshow:hover span.btn-play,
-.widget.responsiveslideshow .slideshow-widget:hover .btn-play.pause {
-	&:before, &:after {
-		width: 8px;
-		height: 26px;
-		background: @color-swatch2;
-		border: 0;
-		top: 27px;
-		left: 28px;
-	}
-	&:after {
-		left: 42px;
-	}
+
+.widget.responsiveslideshow .slideshow-widget .btn-play.pause {
+    &:before, &:after {
+        width: 8px;
+        height: 26px;
+        background: @color-swatch2;
+        border: 0;
+        top: 27px;
+        left: 28px;
+    }
+    &:after {
+        left: 42px;
+    }
 }
+
+
+
 
 .widget.responsiveslideshow .slideshow-widget .btn-play {
 	text-indent: -99999px;
