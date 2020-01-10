@@ -54,6 +54,11 @@
     }
 
 
+    .widget.socialicons span a {
+      min-width: 0;
+    }
+
+
     .extendednavigation .pull:after {
       margin-right: 12px;
     }
@@ -74,7 +79,7 @@
     .empty-zone,
     #page-zones__main:empty,
     #page-zones__main > .widget:not(.row),
-    #page-zones__main > .row:not(.row--width-no-padding) .row__container,
+    .row:not(.widget):not(.row--width-no-padding) .row__container,
     .header-blog,
     .template-footer {
       margin-left: auto;
